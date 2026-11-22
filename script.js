@@ -2,7 +2,7 @@
 const dropDown = document.getElementById("colorSelect");
 const removeBtn = document.querySelector('input[type="button"]');
 function removeElement() {
-	dropDown.remove(dropDown.selectedIndex);
+	dropDown.removeChild(dropDown.options[dropDown.selectedIndex]);
 }
 
 removeBtn.addEventListener("click",removeElement);
